@@ -1,0 +1,750 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		618B4B09254F81FC001A83A1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 618B4B08254F81FC001A83A1 /* AppDelegate.swift */; };
+		618B4B0D254F81FC001A83A1 /* WeatherListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 618B4B0C254F81FC001A83A1 /* WeatherListViewController.swift */; };
+		618B4B12254F81FD001A83A1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 618B4B11254F81FD001A83A1 /* Assets.xcassets */; };
+		618B4B15254F81FD001A83A1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 618B4B13254F81FD001A83A1 /* LaunchScreen.storyboard */; };
+		618B4B20254F81FD001A83A1 /* MomenWeatherAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 618B4B1F254F81FD001A83A1 /* MomenWeatherAppTests.swift */; };
+		618B4B2B254F81FD001A83A1 /* MomenWeatherAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 618B4B2A254F81FD001A83A1 /* MomenWeatherAppUITests.swift */; };
+		618B4B49254F8526001A83A1 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 618B4B47254F8526001A83A1 /* Coordinator.swift */; };
+		618B4B4A254F8526001A83A1 /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 618B4B48254F8526001A83A1 /* MainCoordinator.swift */; };
+		618B4B50254F8633001A83A1 /* WeatherListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 618B4B4F254F8633001A83A1 /* WeatherListViewModel.swift */; };
+		618B4B55254F891B001A83A1 /* UIFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 618B4B54254F891B001A83A1 /* UIFactory.swift */; };
+		618B4B63254FFA49001A83A1 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 618B4B62254FFA49001A83A1 /* BaseViewController.swift */; };
+		618B4B712554C268001A83A1 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 618B4B702554C268001A83A1 /* Theme.swift */; };
+		618B4B802554C532001A83A1 /* With.swift in Sources */ = {isa = PBXBuildFile; fileRef = 618B4B7F2554C532001A83A1 /* With.swift */; };
+		618B4B852554C541001A83A1 /* UIView+Layout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 618B4B842554C541001A83A1 /* UIView+Layout.swift */; };
+		618B4B8A2554C6E5001A83A1 /* WeatherDayCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 618B4B892554C6E5001A83A1 /* WeatherDayCell.swift */; };
+		618B4B902554CDBA001A83A1 /* ImageLoaderService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 618B4B8E2554CDBA001A83A1 /* ImageLoaderService.swift */; };
+		618B4B912554CDBA001A83A1 /* ImageCachingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 618B4B8F2554CDBA001A83A1 /* ImageCachingService.swift */; };
+		618B4B962554CE0E001A83A1 /* WeatherCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 618B4B952554CE0E001A83A1 /* WeatherCell.swift */; };
+		618B4BC32554ED1F001A83A1 /* Collection+Sorted.swift in Sources */ = {isa = PBXBuildFile; fileRef = 618B4BC22554ED1F001A83A1 /* Collection+Sorted.swift */; };
+		619DBBEF2555DDF1006147B1 /* MomenWeatherSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61A4C3D42555DD180070B06E /* MomenWeatherSDK.framework */; };
+		619DBBF02555DDF1006147B1 /* MomenWeatherSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 61A4C3D42555DD180070B06E /* MomenWeatherSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		619DBBF525560733006147B1 /* Date+TimeDateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 619DBBF425560733006147B1 /* Date+TimeDateFormatter.swift */; };
+		61A4C3C22555CB530070B06E /* WeatherDayViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61A4C3C12555CB530070B06E /* WeatherDayViewModel.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		618B4B1C254F81FD001A83A1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 618B4AFD254F81FC001A83A1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 618B4B04254F81FC001A83A1;
+			remoteInfo = MomenWeatherApp;
+		};
+		618B4B27254F81FD001A83A1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 618B4AFD254F81FC001A83A1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 618B4B04254F81FC001A83A1;
+			remoteInfo = MomenWeatherApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		619DBBF12555DDF1006147B1 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				619DBBF02555DDF1006147B1 /* MomenWeatherSDK.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		618B4B05254F81FC001A83A1 /* MomenWeatherApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MomenWeatherApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		618B4B08254F81FC001A83A1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		618B4B0C254F81FC001A83A1 /* WeatherListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherListViewController.swift; sourceTree = "<group>"; };
+		618B4B11254F81FD001A83A1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		618B4B14254F81FD001A83A1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		618B4B16254F81FD001A83A1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		618B4B1B254F81FD001A83A1 /* MomenWeatherAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MomenWeatherAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		618B4B1F254F81FD001A83A1 /* MomenWeatherAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MomenWeatherAppTests.swift; sourceTree = "<group>"; };
+		618B4B21254F81FD001A83A1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		618B4B26254F81FD001A83A1 /* MomenWeatherAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MomenWeatherAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		618B4B2A254F81FD001A83A1 /* MomenWeatherAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MomenWeatherAppUITests.swift; sourceTree = "<group>"; };
+		618B4B2C254F81FD001A83A1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		618B4B47254F8526001A83A1 /* Coordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		618B4B48254F8526001A83A1 /* MainCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
+		618B4B4F254F8633001A83A1 /* WeatherListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherListViewModel.swift; sourceTree = "<group>"; };
+		618B4B54254F891B001A83A1 /* UIFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIFactory.swift; sourceTree = "<group>"; };
+		618B4B62254FFA49001A83A1 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		618B4B702554C268001A83A1 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		618B4B7F2554C532001A83A1 /* With.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = With.swift; sourceTree = "<group>"; };
+		618B4B842554C541001A83A1 /* UIView+Layout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Layout.swift"; sourceTree = "<group>"; };
+		618B4B892554C6E5001A83A1 /* WeatherDayCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherDayCell.swift; sourceTree = "<group>"; };
+		618B4B8E2554CDBA001A83A1 /* ImageLoaderService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageLoaderService.swift; sourceTree = "<group>"; };
+		618B4B8F2554CDBA001A83A1 /* ImageCachingService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageCachingService.swift; sourceTree = "<group>"; };
+		618B4B952554CE0E001A83A1 /* WeatherCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherCell.swift; sourceTree = "<group>"; };
+		618B4BC22554ED1F001A83A1 /* Collection+Sorted.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Collection+Sorted.swift"; sourceTree = "<group>"; };
+		619DBBF425560733006147B1 /* Date+TimeDateFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+TimeDateFormatter.swift"; sourceTree = "<group>"; };
+		61A4C3C12555CB530070B06E /* WeatherDayViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherDayViewModel.swift; sourceTree = "<group>"; };
+		61A4C3D42555DD180070B06E /* MomenWeatherSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = MomenWeatherSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		618B4B02254F81FC001A83A1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				619DBBEF2555DDF1006147B1 /* MomenWeatherSDK.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		618B4B18254F81FD001A83A1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		618B4B23254F81FD001A83A1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		618B4AFC254F81FC001A83A1 = {
+			isa = PBXGroup;
+			children = (
+				618B4B07254F81FC001A83A1 /* MomenWeatherApp */,
+				618B4B1E254F81FD001A83A1 /* MomenWeatherAppTests */,
+				618B4B29254F81FD001A83A1 /* MomenWeatherAppUITests */,
+				618B4B06254F81FC001A83A1 /* Products */,
+				61A4C3D32555DD180070B06E /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		618B4B06254F81FC001A83A1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				618B4B05254F81FC001A83A1 /* MomenWeatherApp.app */,
+				618B4B1B254F81FD001A83A1 /* MomenWeatherAppTests.xctest */,
+				618B4B26254F81FD001A83A1 /* MomenWeatherAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		618B4B07254F81FC001A83A1 /* MomenWeatherApp */ = {
+			isa = PBXGroup;
+			children = (
+				618B4B7E2554C529001A83A1 /* Helper */,
+				618B4B4E254F8594001A83A1 /* ViewModel */,
+				618B4B45254F8526001A83A1 /* Coordinator */,
+				618B4B44254F850A001A83A1 /* ViewController */,
+				618B4B43254F8501001A83A1 /* View */,
+				618B4B42254F84F5001A83A1 /* Resources */,
+				618B4B41254F84E2001A83A1 /* Application */,
+			);
+			path = MomenWeatherApp;
+			sourceTree = "<group>";
+		};
+		618B4B1E254F81FD001A83A1 /* MomenWeatherAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				618B4B1F254F81FD001A83A1 /* MomenWeatherAppTests.swift */,
+				618B4B21254F81FD001A83A1 /* Info.plist */,
+			);
+			path = MomenWeatherAppTests;
+			sourceTree = "<group>";
+		};
+		618B4B29254F81FD001A83A1 /* MomenWeatherAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				618B4B2A254F81FD001A83A1 /* MomenWeatherAppUITests.swift */,
+				618B4B2C254F81FD001A83A1 /* Info.plist */,
+			);
+			path = MomenWeatherAppUITests;
+			sourceTree = "<group>";
+		};
+		618B4B41254F84E2001A83A1 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				618B4B08254F81FC001A83A1 /* AppDelegate.swift */,
+				618B4B16254F81FD001A83A1 /* Info.plist */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		618B4B42254F84F5001A83A1 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				618B4B11254F81FD001A83A1 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		618B4B43254F8501001A83A1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				618B4B6F2554C260001A83A1 /* Common */,
+				618B4B13254F81FD001A83A1 /* LaunchScreen.storyboard */,
+				618B4B54254F891B001A83A1 /* UIFactory.swift */,
+				618B4B892554C6E5001A83A1 /* WeatherDayCell.swift */,
+				618B4B952554CE0E001A83A1 /* WeatherCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		618B4B44254F850A001A83A1 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				618B4B61254FFA49001A83A1 /* Common */,
+				618B4B0C254F81FC001A83A1 /* WeatherListViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		618B4B45254F8526001A83A1 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				618B4B46254F8526001A83A1 /* Protocol */,
+				618B4B48254F8526001A83A1 /* MainCoordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		618B4B46254F8526001A83A1 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				618B4B47254F8526001A83A1 /* Coordinator.swift */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		618B4B4E254F8594001A83A1 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				618B4B4F254F8633001A83A1 /* WeatherListViewModel.swift */,
+				61A4C3C12555CB530070B06E /* WeatherDayViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		618B4B61254FFA49001A83A1 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				618B4B62254FFA49001A83A1 /* BaseViewController.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		618B4B6F2554C260001A83A1 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				618B4B702554C268001A83A1 /* Theme.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		618B4B7E2554C529001A83A1 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				618B4B8F2554CDBA001A83A1 /* ImageCachingService.swift */,
+				618B4B8E2554CDBA001A83A1 /* ImageLoaderService.swift */,
+				618B4B7F2554C532001A83A1 /* With.swift */,
+				618B4B842554C541001A83A1 /* UIView+Layout.swift */,
+				618B4BC22554ED1F001A83A1 /* Collection+Sorted.swift */,
+				619DBBF425560733006147B1 /* Date+TimeDateFormatter.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		61A4C3D32555DD180070B06E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				61A4C3D42555DD180070B06E /* MomenWeatherSDK.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		618B4B04254F81FC001A83A1 /* MomenWeatherApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 618B4B2F254F81FD001A83A1 /* Build configuration list for PBXNativeTarget "MomenWeatherApp" */;
+			buildPhases = (
+				618B4B01254F81FC001A83A1 /* Sources */,
+				618B4B02254F81FC001A83A1 /* Frameworks */,
+				618B4B03254F81FC001A83A1 /* Resources */,
+				619DBBF12555DDF1006147B1 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MomenWeatherApp;
+			productName = MomenWeatherApp;
+			productReference = 618B4B05254F81FC001A83A1 /* MomenWeatherApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		618B4B1A254F81FD001A83A1 /* MomenWeatherAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 618B4B32254F81FD001A83A1 /* Build configuration list for PBXNativeTarget "MomenWeatherAppTests" */;
+			buildPhases = (
+				618B4B17254F81FD001A83A1 /* Sources */,
+				618B4B18254F81FD001A83A1 /* Frameworks */,
+				618B4B19254F81FD001A83A1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				618B4B1D254F81FD001A83A1 /* PBXTargetDependency */,
+			);
+			name = MomenWeatherAppTests;
+			productName = MomenWeatherAppTests;
+			productReference = 618B4B1B254F81FD001A83A1 /* MomenWeatherAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		618B4B25254F81FD001A83A1 /* MomenWeatherAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 618B4B35254F81FD001A83A1 /* Build configuration list for PBXNativeTarget "MomenWeatherAppUITests" */;
+			buildPhases = (
+				618B4B22254F81FD001A83A1 /* Sources */,
+				618B4B23254F81FD001A83A1 /* Frameworks */,
+				618B4B24254F81FD001A83A1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				618B4B28254F81FD001A83A1 /* PBXTargetDependency */,
+			);
+			name = MomenWeatherAppUITests;
+			productName = MomenWeatherAppUITests;
+			productReference = 618B4B26254F81FD001A83A1 /* MomenWeatherAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		618B4AFD254F81FC001A83A1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1210;
+				LastUpgradeCheck = 1210;
+				TargetAttributes = {
+					618B4B04254F81FC001A83A1 = {
+						CreatedOnToolsVersion = 12.1;
+					};
+					618B4B1A254F81FD001A83A1 = {
+						CreatedOnToolsVersion = 12.1;
+						TestTargetID = 618B4B04254F81FC001A83A1;
+					};
+					618B4B25254F81FD001A83A1 = {
+						CreatedOnToolsVersion = 12.1;
+						TestTargetID = 618B4B04254F81FC001A83A1;
+					};
+				};
+			};
+			buildConfigurationList = 618B4B00254F81FC001A83A1 /* Build configuration list for PBXProject "MomenWeatherApp" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 618B4AFC254F81FC001A83A1;
+			productRefGroup = 618B4B06254F81FC001A83A1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				618B4B04254F81FC001A83A1 /* MomenWeatherApp */,
+				618B4B1A254F81FD001A83A1 /* MomenWeatherAppTests */,
+				618B4B25254F81FD001A83A1 /* MomenWeatherAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		618B4B03254F81FC001A83A1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				618B4B15254F81FD001A83A1 /* LaunchScreen.storyboard in Resources */,
+				618B4B12254F81FD001A83A1 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		618B4B19254F81FD001A83A1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		618B4B24254F81FD001A83A1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		618B4B01254F81FC001A83A1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				618B4B0D254F81FC001A83A1 /* WeatherListViewController.swift in Sources */,
+				618B4B712554C268001A83A1 /* Theme.swift in Sources */,
+				618B4BC32554ED1F001A83A1 /* Collection+Sorted.swift in Sources */,
+				618B4B4A254F8526001A83A1 /* MainCoordinator.swift in Sources */,
+				618B4B55254F891B001A83A1 /* UIFactory.swift in Sources */,
+				618B4B912554CDBA001A83A1 /* ImageCachingService.swift in Sources */,
+				618B4B8A2554C6E5001A83A1 /* WeatherDayCell.swift in Sources */,
+				618B4B962554CE0E001A83A1 /* WeatherCell.swift in Sources */,
+				618B4B852554C541001A83A1 /* UIView+Layout.swift in Sources */,
+				618B4B902554CDBA001A83A1 /* ImageLoaderService.swift in Sources */,
+				618B4B802554C532001A83A1 /* With.swift in Sources */,
+				619DBBF525560733006147B1 /* Date+TimeDateFormatter.swift in Sources */,
+				618B4B09254F81FC001A83A1 /* AppDelegate.swift in Sources */,
+				618B4B49254F8526001A83A1 /* Coordinator.swift in Sources */,
+				618B4B63254FFA49001A83A1 /* BaseViewController.swift in Sources */,
+				61A4C3C22555CB530070B06E /* WeatherDayViewModel.swift in Sources */,
+				618B4B50254F8633001A83A1 /* WeatherListViewModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		618B4B17254F81FD001A83A1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				618B4B20254F81FD001A83A1 /* MomenWeatherAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		618B4B22254F81FD001A83A1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				618B4B2B254F81FD001A83A1 /* MomenWeatherAppUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		618B4B1D254F81FD001A83A1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 618B4B04254F81FC001A83A1 /* MomenWeatherApp */;
+			targetProxy = 618B4B1C254F81FD001A83A1 /* PBXContainerItemProxy */;
+		};
+		618B4B28254F81FD001A83A1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 618B4B04254F81FC001A83A1 /* MomenWeatherApp */;
+			targetProxy = 618B4B27254F81FD001A83A1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		618B4B13254F81FD001A83A1 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				618B4B14254F81FD001A83A1 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		618B4B2D254F81FD001A83A1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		618B4B2E254F81FD001A83A1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		618B4B30254F81FD001A83A1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = F27Q9335Z8;
+				INFOPLIST_FILE = MomenWeatherApp/Application/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.momenshataly.weather.MomenWeatherApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		618B4B31254F81FD001A83A1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = F27Q9335Z8;
+				INFOPLIST_FILE = MomenWeatherApp/Application/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.momenshataly.weather.MomenWeatherApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		618B4B33254F81FD001A83A1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = F27Q9335Z8;
+				INFOPLIST_FILE = MomenWeatherAppTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.momenshataly.weather.MomenWeatherAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MomenWeatherApp.app/MomenWeatherApp";
+			};
+			name = Debug;
+		};
+		618B4B34254F81FD001A83A1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = F27Q9335Z8;
+				INFOPLIST_FILE = MomenWeatherAppTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.momenshataly.weather.MomenWeatherAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MomenWeatherApp.app/MomenWeatherApp";
+			};
+			name = Release;
+		};
+		618B4B36254F81FD001A83A1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = F27Q9335Z8;
+				INFOPLIST_FILE = MomenWeatherAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.momenshataly.weather.MomenWeatherAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MomenWeatherApp;
+			};
+			name = Debug;
+		};
+		618B4B37254F81FD001A83A1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = F27Q9335Z8;
+				INFOPLIST_FILE = MomenWeatherAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.momenshataly.weather.MomenWeatherAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MomenWeatherApp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		618B4B00254F81FC001A83A1 /* Build configuration list for PBXProject "MomenWeatherApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				618B4B2D254F81FD001A83A1 /* Debug */,
+				618B4B2E254F81FD001A83A1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		618B4B2F254F81FD001A83A1 /* Build configuration list for PBXNativeTarget "MomenWeatherApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				618B4B30254F81FD001A83A1 /* Debug */,
+				618B4B31254F81FD001A83A1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		618B4B32254F81FD001A83A1 /* Build configuration list for PBXNativeTarget "MomenWeatherAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				618B4B33254F81FD001A83A1 /* Debug */,
+				618B4B34254F81FD001A83A1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		618B4B35254F81FD001A83A1 /* Build configuration list for PBXNativeTarget "MomenWeatherAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				618B4B36254F81FD001A83A1 /* Debug */,
+				618B4B37254F81FD001A83A1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 618B4AFD254F81FC001A83A1 /* Project object */;
+}
