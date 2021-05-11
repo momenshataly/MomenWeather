@@ -99,7 +99,7 @@ Represents the core data of a single day/hour reading of the result, included wi
 Represents data for a city including country code, sunrise, sunset as well as population.
 
 ## ViewModels
-### We only have one viewmodel `WeatherListViewModel` represents a state of `WeatherListViewController` called by viewController which in turn forwards the call to the coordinator in order to refresh it's data, using a delegate pattern `WeatherListViewControllerDelegate`.
+We only have one viewmodel `WeatherListViewModel` represents a state of `WeatherListViewController` called by viewController which in turn forwards the call to the coordinator in order to refresh it's data, using a delegate pattern `WeatherListViewControllerDelegate`.
 
 ## Dependency Management
 I haven't used any third party libraries since it's one of the requirements.
